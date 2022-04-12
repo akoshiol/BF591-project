@@ -8,5 +8,5 @@
 <br>
 *"sample_preprocessing.ipynb"* : file used to process sample info data for use in R<br>
 <br>
-*samples_app.R* : testing code in the testing_samples.R file in an app format for use in the final app
+*"samples_app.R"* : testing code in the testing_samples.R file in an app format for use in the final app
 
