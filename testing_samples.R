@@ -9,9 +9,13 @@
 #                   R Shiny app
 ##################
 
-# import necessary libraries
+# import libraries
 library(tidyverse)
 library(BiocManager)
+library(shiny)
+library(bslib)
+library(ggplot2)
+library(colourpicker)
 
 # set working directory
 setwd("~/Desktop/BU/BF591/BF591-project")
@@ -78,3 +82,17 @@ example <- c(sample_info$sample_name[1],
              )
 
 summary_info <- tibble(column_names, type, mean, example)
+
+# arranging the summary data
+sample_arranged <- dplyr::arrange(sample_info, age_of_death)
+
+
+# create a histogram of the sample data
+h <- ggplot(sample_info, aes(diagnosis)) +
+  geom_histogram(stat = 'count',
+                 color = 'black',
+                 fill = 'white') +
+  xlab('Diagnosis') +
+  ylab('Count') +
+  ggtitle("Count of Normal vs Huntington's Disease")
+h
