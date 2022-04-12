@@ -1,6 +1,7 @@
 # BF591-project
 
-"data" folder - .txt and .csv files of counts and DE data from GSE64810 on NCBI <br>
+**Contents**
+*"data" folder* - .txt and .csv files of counts and DE data from GSE64810 on NCBI <br>
 <br>
-"testing_samples.R" - file used to create R code for the samples tab in the Shiny app
+*"testing_samples.R"* - file used to create R code for the samples tab in the Shiny app
 
