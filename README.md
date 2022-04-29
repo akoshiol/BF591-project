@@ -8,4 +8,5 @@
 <br>
 *"sample_preprocessing.ipynb"* : file used to process sample info data for use in R<br>
 <br>
+*"final_app.R"* : a functioning R Shiny app that explores data related to Huntington's Disease by looking at sample information, a counts matrix, differential expression data, and individual counts and gene expression information
 
